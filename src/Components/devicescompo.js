@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
+
 export default class devicescompo extends Component {
      render() {
           return (
@@ -12,7 +13,7 @@ export default class devicescompo extends Component {
           <p class="card-text">With Go Digi 128 Per Month</p>
           <div class='card-footer bg-white'>
                <center>
-          <button type="button" class="btn " id='planbutton'>View More</button>
+          <button type="button" class="btn " id='planbutton' >View More</button>
           </center>
           </div>
           </div>

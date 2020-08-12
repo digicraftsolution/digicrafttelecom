@@ -70,8 +70,8 @@ width: 91%;
 
 .carousel-indicators li {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 10px;
   text-indent: 0;
   cursor: pointer;
@@ -81,14 +81,14 @@ width: 91%;
   box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
 }
 .carousel-indicators .active {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 10px;
   background-color: rgba(252,95,22,1);
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
 
 }
 #plan{
@@ -117,7 +117,6 @@ margin-bottom: -2%;
 
 #cardhed{
   background: rgb(252,95,22);
-  
   border-radius: 12px;
 }
 #cardhed:hover{
@@ -125,11 +124,26 @@ margin-bottom: -2%;
 }
 #planbutton{
   background: rgb(252,95,22);
-  
   width: 80%;
   border-radius: 12px;
   color: white;
 }
+#orderbutton{
+  background: rgb(252,95,22);
+  width: 7%;
+  border-radius: 1px;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: white;
+}
+#orderbutton:hover{
+  box-shadow: 0 0 11px rgb(255, 255, 255);
+  background-color:  rgb(255, 255, 255);
+  border: 1px solid rgb(252,95,22);
+  color:rgb(252,95,22);
+  
+}
+
 #planbutton:hover{
   box-shadow: 0 0 11px rgb(255, 255, 255);
   background-color:  rgb(255, 255, 255);
@@ -202,6 +216,155 @@ margin-left: 10%;
   margin-top: 1%;
   
 }
+#ordercard{
+  align-content: center;
+  margin-top: 1%;
+}
+#principalplan{
+  margin-top: 40%;
+}
+#devicet{
+  margin-top: 15%;
+}
+#dropdownd{
+  width: 70%;
+  
+  align-self: center;
+}
+#dropdownc{
+  width: 80%;
+  
+  
+  align-self: center;
+}
+
+#ordercard{
+  width: 70%;
+}
+#detailscard{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  color: rgb(252,95,22);
+
+}
+#detail1{
+  border: 1px solid rgb(252,95,22);
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#detail11{
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0px;
+
+}
+#summarycard{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  
+
+}
+
+
+
+#height{
+  width: 70px;
+  color:white;
+  background: rgb(252,95,22);
+  border-radius: 12px;
+  margin-left: 1%;
+}
+#pland{
+  background: rgb(252,95,22);
+  background: linear-gradient(90deg, rgba(252,95,22,1) 60%, rgba(255,157,27,1) 78%);
+}
+#planc{
+  background: rgb(252,95,22);
+  background: linear-gradient(90deg, rgba(252,95,22,1) 60%, rgba(255,157,27,1) 78%);
+
+}
+#plandt{
+  margin-top: 40%;
+  width: 65%;
+  border-radius: 12px;
+  
+}
+#plandc{
+  margin-top: 15%;
+  width: 65%;
+  border-radius: 12px;
+  
+}
+#orderde{
+  margin-top: 5%;
+width: 410px;
+border: 0px solid black;
+}
+#portinc{
+  margin-top: 1%;
+  /* background: rgb(252,95,22); */
+  border-radius: 12px;
+  width: 20%;
+  height: 60px;
+  color:rgb(252,95,22);
+ 
+}
+#tabfont{
+  width: 100%;
+  font-size: 19px;
+  
+}
+#selectedtab{
+  width: 30%;
+  color:white;
+  background: rgb(252,95,22);
+  border-radius: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1%;  
+ 
+  
+}
+#nonselectedtab{
+  width: 30%;
+  background: white;
+  border: 1px solid rgb(252,95,22);
+  border-radius: 50px;
+  color:rgb(252,95,22);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1%;
+  
+}
+
+
+#space{
+  width:50%;
+  
+ 
+}
+#colorline{
+  width: 25px;
+  height: 1px;
+  margin-top: 2.5%;
+  
+  border:1px solid rgb(252,95,22) ;
+}
+#noncolorline{
+  width: 25px;
+  height: 1px;
+  margin-top: 2.5%;
+
+  border:1px solid rgb(252,95,22) ;
+}
+
+
 
 
 @media only screen and (max-width: 1366px) {
@@ -232,6 +395,74 @@ margin-right: auto;
  
   
 }
+#ordercard{
+  width: 90%;
+}
+#orderde{
+  width: 350px;
+}
+#orderbutton{
+ 
+  width: 10%;
+ 
+}
+#tabfont{
+  width: 100%;
+  font-size: 25px;
+  
+}
+#selectedtab{
+ 
+  color:white;
+  background: rgb(252,95,22);
+  border-radius: 50px;
+  
+  margin-bottom: 1%;  
+ 
+  
+}
+#nonselectedtab{
+
+  background: white;
+  border: 1px solid rgb(252,95,22);
+  border-radius: 50px;
+  color:rgb(252,95,22);
+
+  margin-bottom: 1%;
+  
+}
+
+
+#space{
+  width:80%;
+  
+  
+ 
+}
+#colorline{
+  width: 25px;
+  height: 1px;
+  margin-top: 3%;
+
+  border:1px solid rgb(252,95,22) ;
+}
+#noncolorline{
+  width: 25px;
+  height: 1px;
+  margin-top: 3%;
+
+  border:1px solid rgb(252,95,22) ;
+}
+#detailscard{
+  width: 80%;
+  
+
+}
+#summarycard{
+  width: 80%;
+  
+
+}
 }
 @media only screen and (max-width: 375px) {
   #cardplan{
@@ -253,6 +484,15 @@ margin-right: auto;
   margin-top: 5%;
  
 }
+#tabfont{
+  
+  font-size: 25px;
+  
+}
+
+
+
+
 }
 @media only screen and (max-width: 360px) {
  
@@ -275,6 +515,44 @@ margin-right: auto;
   margin-top: 5%;
  
 }
+
+
+#dropdownd{
+  width: 75%;
+  
+  align-self: center;
+}
+#dropdownc{
+  width: 85%;
+  align-self: center;
+}
+#detailscard{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  margin-top: 2%;
+
+}
+#summarycard{
+  margin-top: 2%;
+  width: 95%;
+}
+
+
+
+
+
+#ordercard{
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+
 }
 @media only screen and (max-width: 411px) {
   #cardplan{
@@ -296,6 +574,13 @@ margin-right: auto;
   margin-top: 5%;
  
 }
+
+
+
+
+
+
+
 }
 @media only screen and (max-width: 414px) {
   #cardplan{
@@ -317,6 +602,9 @@ margin-right: auto;
   margin-top: 5%;
  
 }
+
+
+
 }
 @media only screen and (max-width: 768px) {
 
@@ -345,6 +633,63 @@ margin-right: auto;
   margin-top: 5%;
  
 }
+#tabswt{
+  margin-top: 1%;
+  width: 90%;
+  height: 100px;
+  border:0px ;
+ 
+}
+#ordercard{
+  width: 100%;
+}
+#orderde{
+  margin-top: 5%;
+	width: 250px;
+border: 0px solid black;
+}
+#orderbutton{
+  background: rgb(252,95,22);
+  width: 20%;
+  border-radius: 1px;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: white;
+}
+
+
+
+
+
+}
+@media only screen and (max-width: 1024px){
+  #tabfont{
+    width: 100%;
+    font-size: 25px;
+    
+  }
+  
+  
+  
+  
+  #space{
+    width:70%;
+    
+   
+  }
+  #colorline{
+   
+    margin-top: 5.5%;
+    
+  
+  }
+  #noncolorline{
+    
+    margin-top: 5.5%;
+  
+  
+  }
+  
 }
 @media only screen and (max-width: 450px) {
 
@@ -356,6 +701,8 @@ margin-right: auto;
     margin-top: 5%;
    
   }
+  
+
   }
 
   @media only screen and (max-width: 450px) {
@@ -378,6 +725,63 @@ margin-right: auto;
     margin-top: 5%;
    
   }
+  #tabfont{
+    width: 100%;
+    font-size: 15px;
+    
+  }
+  #selectedtab{
+    width: 30%;
+    color:white;
+    background: rgb(252,95,22);
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;  
+   
+    
+  }
+  #nonselectedtab{
+    width: 30%;
+    background: white;
+    border: 1px solid rgb(252,95,22);
+    border-radius: 50px;
+    color:rgb(252,95,22);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    
+  }
+  
+  
+  #space{
+    width:80%;
+    
+   
+  }
+  #colorline{
+    width: 10px;
+    height: 1px;
+    margin-top: 5.5%;
+    
+    border:1px solid rgb(252,95,22) ;
+  }
+  #noncolorline{
+    width: 10px;
+    height: 1px;
+    margin-top: 5.5%;
+  
+    border:1px solid rgb(252,95,22) ;
+  }
+  
+ 
+ 
+  
+  
+  
+ 
+  
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -404,6 +808,53 @@ margin-right: auto;
   
   height: 40%;
 }
+#portinc{
+  
+  border-radius: 12px;
+  width: 50%;
+  
+ 
+}
+#number{
+ 
+  width: 100%;
+  color:white;
+  background: rgb(252,95,22);
+  border-radius: 12px;
+  margin-left: 1%;
+}
+#orderbutton{
+ 
+  width: 20%;
+ 
+}
+#principalplan{
+  margin-top: 10%;
+}
+#plandt{
+  margin-top: 1%;
+  width: 60%;
+  border-radius: 12px;
+  
+}
+#devicet{
+  margin-top: 10%;
+}
+#orderde{
+  margin-top: 5%;
+width: 250px;
+border: 0px solid black;
+}
+#plandc{
+  margin-top: 1%;
+  width: 60%;
+  border-radius: 12px;
+  
+}
+#tabs{
+  width: 100%;
+}
+
 }
 
 

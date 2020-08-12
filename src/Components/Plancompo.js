@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
+
 export default class Plancompo extends Component {
      render() {
           return (
@@ -39,7 +40,7 @@ RM30 / Month<br/>
 <span class='font-weight-bold'>24months Contract</span>
 </div>
 <div class='card-footer bg-white'>
-<button type="button" class="btn " id='planbutton'>Select</button>      
+<a href='/order'><button type="button" class="btn " id='planbutton'>Select</button>      </a>
     </div>
      </div>
                

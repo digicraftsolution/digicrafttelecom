@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
+
 export default class Plancompo extends Component {
      render() {
           return (
@@ -15,7 +16,7 @@ export default class Plancompo extends Component {
       <p class="card-text">
       <span class='font-weight-bold'> <p>SPECIFICATIONS </p></span>
 
-Unlimited Domestic Calls<br/>
+          Unlimited Domestic Calls<br/>
 1,500 SMS Domestic*<br/><br/>
  <span class='font-weight-bold'>Data Quota - 50GB</span><br/>
 Anytime Internet (20GB+10GB)<br/>
@@ -39,7 +40,7 @@ RM30 / Month<br/>
 <span class='font-weight-bold'>24months Contract</span>
 </div>
 <div class='card-footer bg-white'>
-<button type="button" class="btn " id='planbutton'>Select</button>      
+<a href='/order'><button type="button" class="btn " id='planbutton'>Select</button>      </a> 
     </div>
      </div>
                
