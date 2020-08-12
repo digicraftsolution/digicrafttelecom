@@ -9,7 +9,7 @@ export default class orderpage extends Component {
      constructor(){
           super()
           this.state={
-               page:'Details',
+               page:'portin',
                planed:'Go Digi 98 Per Month',
                device:'IPHONE SE 64GB'
           }
