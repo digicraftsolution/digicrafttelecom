@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import '../App.css'
+import {Link} from 'react-router-dom'
 import Plan1 from '../Components/plan1'
 import Plan2 from '../Components/plan2'
 import Device1 from '../Components/device1'
 import Device2 from '../Components/device2'
+import Pop from '../Components/purchaseoption'
 
 export default class orderpage extends Component {
      constructor(){
           super()
           this.state={
-               page:'portin',
+               page:'purchaseop',
                planed:'Go Digi 98 Per Month',
                device:'IPHONE SE 64GB'
           }
@@ -31,7 +33,13 @@ export default class orderpage extends Component {
           
      }
      next(){
-          if(this.state.page==='portin')
+          if(this.state.page==='purchaseop')
+          {
+               this.setState({
+                    page:'portin'
+               })
+          }
+          else if(this.state.page==='portin')
           {
                this.setState({
                     page:'Details'
@@ -63,11 +71,52 @@ export default class orderpage extends Component {
                     page:'portin'
                })
           }
+         else if(this.state.page==='portin')
+          {
+               this.setState({
+                    page:'purchaseop'
+               })
+          }
         
      }
      render() {
           const{page,planed,device}=this.state
-        if(page==='portin'){
+          if(page==='purchaseop')
+          {
+               return(
+                    <div>
+                    <center>
+                    <h3 id='portinc'>Your Order</h3>
+                         
+                    
+                    <div id='space'>
+                    
+                    <div class='row' > 
+                    <span class='card' id='selectedtab'><div id='tabfont'>1<br/>Purchase Option</div></span>
+                    <div id='noncolorline'></div>   
+                    <span class='card' id='nonselectedtab'><div id='tabfont'>2<br/>Configure</div></span>
+                    <div id='noncolorline'></div>
+                    <span id='nonselectedtab'><div id='tabfont' >3<br/>Details</div></span>
+                    <div id='noncolorline'></div>
+                    <span id='nonselectedtab'><div id='tabfont'>4<br/>Summary</div></span>
+                    </div>
+                    </div>
+                    <Pop/>
+                    
+                    
+                    
+                    <br/>
+                    <br/>
+                    
+                    <Link to='/' ><button type="button" class="btn " id='orderbutton' >Back</button></Link>
+                    <button type="button" class="btn " id='orderbutton' onClick={this.next}>Next</button>
+                    <br/>
+                    <br/>
+                  </center>
+                  </div>
+               )
+          }
+          else if(page==='portin'){
              return(
                <div>
                     <center>
@@ -76,12 +125,14 @@ export default class orderpage extends Component {
                     
                     <div id='space'>
                     
-                    <div class='row'>    
-                    <span class='card' id='selectedtab'><div id='tabfont'>1<br/>Configure</div></span>
+                    <div class='row'> 
+                    <span class='card' id='nonselectedtab'><div id='tabfont'>1<br/>Purchase Option</div></span>
+                    <div id='noncolorline'></div>     
+                    <span class='card' id='selectedtab'><div id='tabfont'>2<br/>Configure</div></span>
                     <div id='noncolorline'></div>
-                    <span id='nonselectedtab'><div id='tabfont' >2<br/>Details</div></span>
+                    <span id='nonselectedtab'><div id='tabfont' >3<br/>Details</div></span>
                     <div id='noncolorline'></div>
-                    <span id='nonselectedtab'><div id='tabfont'>3<br/>Summary</div></span>
+                    <span id='nonselectedtab'><div id='tabfont'>4<br/>Summary</div></span>
                     
                     </div>
                     
@@ -157,6 +208,7 @@ export default class orderpage extends Component {
                     <br/>
                     <br/>
                     
+                    <button type="button" class="btn " id='orderbutton' onClick={this.back}>Back</button>
                     <button type="button" class="btn " id='orderbutton' onClick={this.next}>Next</button>
                     <br/>
                     <br/>
@@ -174,12 +226,14 @@ export default class orderpage extends Component {
                           
                     
                     <div id='space'>
-                    <div class='row'>    
-                    <span class='card' id='nonselectedtab'><div id='tabfont'>1<br/>Configure</div></span>
+                    <div class='row'>  
+                    <span class='card' id='nonselectedtab'><div id='tabfont'>1<br/>Purchase Option</div></span>
+                    <div id='noncolorline'></div>    
+                    <span class='card' id='nonselectedtab'><div id='tabfont'>2<br/>Configure</div></span>
                     <div id='colorline' ></div>
-                    <span  id='selectedtab'><div id='tabfont' >2<br/>Details</div></span>
+                    <span  id='selectedtab'><div id='tabfont' >3<br/>Details</div></span>
                     <div id='noncolorline' ></div>
-                    <span id='nonselectedtab'><div id='tabfont'>3<br/>Summary</div></span>
+                    <span id='nonselectedtab'><div id='tabfont'>4<br/>Summary</div></span>
                     
                     </div>
                     </div>
@@ -323,11 +377,13 @@ export default class orderpage extends Component {
                <center>
                <div id='space'>
                     <div class='row'>    
-                    <span class='card' id='nonselectedtab'><div id='tabfont'>1<br/>Configure</div></span>
+                    <span class='card' id='selectedtab'><div id='tabfont'>1<br/>Purchase Option</div></span>
+                    <div id='noncolorline'></div>  
+                    <span class='card' id='nonselectedtab'><div id='tabfont'>2<br/>Configure</div></span>
                     <div id='colorline' ></div>
-                    <span id='nonselectedtab'><div id='tabfont' >2<br/>Details</div></span>
+                    <span id='nonselectedtab'><div id='tabfont' >3<br/>Details</div></span>
                     <div id='colorline' ></div>
-                    <span id='selectedtab' ><div id='tabfont'>3<br/>Summary</div></span>
+                    <span id='selectedtab' ><div id='tabfont'>4<br/>Summary</div></span>
                     
                     </div>
                     </div>
